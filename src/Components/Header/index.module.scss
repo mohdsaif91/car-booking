@@ -1,0 +1,146 @@
+@import "../../variable.scss";
+
+.app_header {
+  .nav_bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    .dark_nav {
+      height: 88px;
+      background-color: $leftNavBar;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 10px 24px;
+      width: 50%;
+      .nav_item {
+        display: inline-block;
+        margin-right: 28px;
+        color: $primaryTextColor;
+        font-weight: 700;
+      }
+      .primary_logo {
+        height: 72px;
+        width: 120px;
+      }
+    }
+    .middle_border {
+    }
+    .greay_nav {
+      width: 50%;
+      height: 88px;
+      background-color: $rightNavBar;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 10px 24px;
+      &::before {
+        left: -24px;
+        top: 0px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0 89px 24px;
+        position: absolute;
+        border-color: transparent transparent #676467 transparent;
+      }
+      .nav_item {
+        display: inline-block;
+        margin-right: 28px;
+        color: $primaryTextColor;
+        font-weight: 700;
+        .nav_item_textIcon_container {
+          display: flex;
+          align-items: center;
+          flex-direction: row;
+          .nav_icon {
+            margin-right: 10px;
+          }
+        }
+      }
+      .secondary_logo {
+        height: 24px;
+        width: 160px;
+      }
+    }
+  }
+  .secondary_navBar {
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    .header_dropdown_container {
+      width: 30%;
+      .header_dropdown {
+        width: 100%;
+        padding: 15px 80px 15px 50px;
+        font-weight: 600;
+        color: $primaryTextColor;
+        background-color: $primaryBackgroundColor;
+        display: block;
+        font-size: 14px;
+        line-height: 20px;
+        transition: all 0.2s ease-in-out;
+        text-transform: uppercase;
+        border: none;
+        .dropdown_item {
+          display: block;
+          font-size: 15px;
+          line-height: 20px;
+          padding: 15px 50px;
+          font-weight: 600;
+          background-color: $leftNavBar;
+        }
+      }
+    }
+    .secondary_navbar_item {
+      width: 100%;
+      padding: 0 24px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      background-color: $SecondaryNaveBackgroundColor;
+      justify-content: space-between;
+      .secondary_nav_items {
+        color: $primaryTextColor;
+        font-weight: 600;
+        display: block;
+        font-size: 14px;
+        line-height: 20px;
+        overflow: hidden;
+        padding: 15px 0;
+      }
+    }
+  }
+  .single_vehicle_header {
+    height: 88px;
+    background-color: $leftNavBar;
+    display: flex;
+    align-items: center;
+    padding-left: 88px;
+    padding-right: 88px;
+    .icon_bar_container {
+      display: flex;
+      flex-direction: column;
+      margin-right: 12px;
+      .icon_bar {
+        display: block;
+        height: 2px;
+        width: 18px;
+        background: $primaryTextColor;
+        border-radius: 9px;
+        margin-bottom: 5px;
+      }
+    }
+    .primary_logo {
+      padding-bottom: 16px;
+      display: inline-block;
+      vertical-align: middle;
+      height: 36px;
+      width: 160px;
+    }
+  }
+}

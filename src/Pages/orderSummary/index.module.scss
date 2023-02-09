@@ -1,0 +1,46 @@
+@import "../../variable.scss";
+
+.container {
+  background-color: $singleVehicleBackgroundColor;
+  height: 100vh;
+  text-align: center;
+  color: $primaryTextColor;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  .allText_container {
+    margin: 40px 120px;
+    text-align: left;
+    display: flex;
+    .text_container {
+      padding-left: 40px;
+    }
+    .varint_container {
+      display: flex;
+      .dot {
+        content: "";
+        width: 5px;
+        height: 5px;
+        background: $primaryTextColor;
+        display: inline-block;
+        border-radius: 50%;
+        vertical-align: middle;
+        margin: 0 3px 0 5px;
+      }
+      h4 {
+        margin: 0 !important;
+      }
+      h5 {
+        margin-right: 8px;
+      }
+    }
+  }
+  .btn_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .home_btn {
+      width: 250px;
+    }
+  }
+}

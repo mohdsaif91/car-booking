@@ -1,0 +1,19 @@
+@import "../../../variable.scss";
+
+.summary_containe {
+  color: $primaryTextColor;
+  .dot {
+    content: "";
+    width: 5px;
+    height: 5px;
+    background: $primaryTextColor;
+    display: inline-block;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin: 0 3px 0 5px;
+  }
+  .card_details {
+    display: flex;
+    flex-direction: row;
+  }
+}

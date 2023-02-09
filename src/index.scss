@@ -1,0 +1,48 @@
+body {
+  font-family: source sans pro, sans-serif !important;
+  margin: 0;
+}
+
+.main-app-container {
+}
+
+.btn-transprent {
+  background: transparent !important;
+}
+
+.btn-active {
+  background-color: #ea3a51;
+  border: none !important;
+}
+
+.btn {
+  display: inline-block;
+  color: #fff !important;
+  border-color: #fff !important;
+  border-radius: 0 !important;
+  margin: 0 20px;
+  padding: 14px !important;
+  font-size: 16px !important;
+  text-align: center;
+  z-index: 2;
+  margin: 0 20px;
+  min-width: 155px;
+  font-weight: 700 !important;
+  text-decoration: none;
+}
+
+.c-p {
+  cursor: pointer;
+}
+
+.rupee-symbol {
+  content: "\f156";
+  font-family: "mnmarrow";
+  font-weight: normal;
+  font-size: 14px;
+  margin-right: 2px;
+}
+
+.mb-2 {
+  margin-bottom: 16px;
+}
